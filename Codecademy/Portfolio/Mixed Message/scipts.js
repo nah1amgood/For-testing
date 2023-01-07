@@ -2,12 +2,10 @@ const noun = ['someone','something','he','she'];
 const verb = ['play','hangout with','watch'];
 const eye = ['find out','meet','see'];
 const object = ['board game','video game','TV'];
-const element = ['water','sun','moon'];
 const emotion =['happy','sad','angry','bored']
 const IndefinitePronouns ={he :'him', she :'her', it:'it', something :'it', someone:'them'}
 
 
-  
 function GenerateAutoNumber(x){
     return Math.floor(Math.random()*x)
 };
@@ -33,9 +31,6 @@ function WordNoun(){
  function WordElement(){
     return element[GenerateAutoNumber(element.length)];
  };
-
-
- 
 
 function GenerareMixedMessage(){
     let person_emotion = WordEmotion();
